@@ -20,11 +20,13 @@ void CEvento_Tecla::Presiona_teclaT()
 }
 void CEvento_Tecla::Presiona_teclaC()
 {
+	int N;
 	do {
 		system("cls");
 		cout << "Ingrese el nuevo valor de n:" << endl;
-		cin >> n;
-	} while (n<=1||n>5);
+		cin >> N;
+	} while (N<=1||N>5);
+	set_n(N);
 }
 CEvento_Tecla::~CEvento_Tecla()
 {

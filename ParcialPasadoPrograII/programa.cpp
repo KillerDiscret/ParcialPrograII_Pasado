@@ -12,6 +12,7 @@ int main()
 	int bateria;
 	int contador;
 	int aux;
+	int N;
 	aux = 1;
 	while (1)
 	{
@@ -29,6 +30,7 @@ int main()
 			if (tecla=='T'||tecla=='t')
 			{
 				objAsistente->teclaT();
+
 				bateria=objEvento->get_bateria();
 				bateria--;
 				objEvento->set_bateria(bateria);
@@ -40,6 +42,8 @@ int main()
 			if (tecla=='C'||tecla=='c')
 			{
 				objAsistente->teclaC();
+				N = objEvento->get_n();
+				objEvento->set_n(N);
 				bateria = objEvento->get_bateria();
 				bateria--;
 				objEvento->set_bateria(bateria);
@@ -70,6 +74,6 @@ int main()
 		}
 		
 	}
-
+	//hola mundo
 	_getch();
 }
